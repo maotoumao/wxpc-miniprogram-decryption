@@ -1,0 +1,13 @@
+{
+  "name": "wxpc-miniprogram-decryption",
+  "version": "1.0.0",
+  "main": "wxmd.js",
+  "author": {
+    "name": "mtm"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0"
+  }
+}
