@@ -26,7 +26,7 @@ const wxmd = async (wxid, pkgsrc, pkgdst) => {
                 resolve(dk);
             })
         })
-        const decipher = crypto.createCipheriv('aes-256-cbc', dk, iv);
+        const decipher = crypto.createDecipheriv('aes-256-cbc', dk, iv);
         const originalHead = Buffer.alloc(1024, decipher.update(bufHead));
 
         // handle tail part
