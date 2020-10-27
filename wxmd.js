@@ -4,8 +4,6 @@ const path = require('path');
 const program = require('commander');
 const chalk = require('chalk');
 
-const wxid = 'wx2790609caeeffe97';
-
 // consts
 const salt = 'saltiest';
 const iv = 'the iv: 16 bytes';
@@ -37,7 +35,7 @@ const wxmd = async (wxid, pkgsrc, pkgdst) => {
         }
         const originalTail = Buffer.from(tail);
         
-        // wrtie to file
+        // write to file
         pkgdst = pkgdst || '.'
         const fstate = await fs.lstat(pkgdst);
         if(fstate.isDirectory()){
